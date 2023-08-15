@@ -1,0 +1,89 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, form {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000;
+  color: #ddd;
+}
+
+/* Additional Styling for Portfolio Website */
+#main-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #000, #222);
+  padding: 15px 0;
+}
+
+/* ... Keep the navigation styles */
+
+/* Home Section */
+#home {
+  background: linear-gradient(135deg, #000, #333);
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+}
+
+.bubbles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ... Add animation styles for bubbles (if desired) ... */
+
+/* Portfolio Section */
+#portfolio {
+  padding: 100px 0;
+}
+
+/* ... Add styling for portfolio items, resume, experience, courses ... */
+
+/* Contact Section */
+#contact {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #000, #333);
+}
+
+/* ... Add styling for the contact form ... */
+
+/* Section Header Styles */
+.section-header {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.section-header:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 3px;
+  background: #1c7ef9;
+  border-radius: 2px;
+}
+
+/* ... Keep the existing CSS styling ... */
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  /* ... Adjust styles for smaller screens ... */
+}
+
+@media screen and (max-width: 600px) {
+  /* ... Further adjustments for mobile screens ... */
+}
