@@ -1,2 +1,2 @@
 # WebPortfolio
-##The puspose of this repository is to create a simple portfolio website.
+## The purpose of this repository is to create a simple portfolio website.
