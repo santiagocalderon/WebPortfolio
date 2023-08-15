@@ -18,8 +18,11 @@ header {
   color: #fff;
   padding: 20px 0;
   text-align: center;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 #main-navigation {
@@ -40,20 +43,24 @@ header {
 
 /* Portfolio Sections */
 .portfolio-section {
- margin-bottom: 80px; /* Add spacing between sections */
+  margin-top: 80px;
+  margin-bottom: 80px;
   padding: 100px 0;
   text-align: center;
   border-radius: 30px;
   overflow: hidden;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   background-color: #1c7ef9;
   color: #fff;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeOut 1s forwards;
 }
 
-/* Add Hover Effects to Sections */
-.portfolio-section:hover {
-  background-color: #2ecc71;
-  color: #fff;
+.active-section {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 /* Section Header Styles */
@@ -115,7 +122,6 @@ footer {
 
 /* Responsive Media Queries */
 @media screen and (max-width: 768px) {
-  /* Adjust styles for smaller screens */
   header {
     padding: 10px 0;
   }
@@ -132,7 +138,6 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  /* Further adjustments for mobile screens */
   header {
     padding: 10px 0;
   }
