@@ -57,6 +57,10 @@ header {
   animation: fadeOut 1s forwards;
 }
 
+.portfolio-section:hover {
+  background-color: #2ecc71; /* Change color on hover */
+}
+
 .active-section {
   opacity: 1;
   transform: translateY(0);
