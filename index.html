@@ -1,81 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Electrical Engineer Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Electrical Engineer Portfolio</div>
-      <div class="menu-toggle" id="menu-toggle">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-      <ul id="main-navigation">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav class="nav">
+            <div class="nav-logo">
+                <h1>Santiago Calderon</h1>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="menu-toggle" class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
 
-  <main>
-    <section id="home" class="portfolio-section">
-      <h1>Welcome to My Portfolio</h1>
-      <p>I am an enthusiastic electrical engineering student.</p>
-    </section>
+    <main>
+        <section id="home" class="section home">
+            <div class="content">
+                <h2>Welcome</h2>
+                <p>The following website aims to display my experience, coursework, and skillset within ECE.</p>
+            </div>
+        </section>
 
-    <section id="about" class="portfolio-section">
-      <h2 class="section-header">About Me</h2>
-      <p>I'm a passionate electrical engineer with a focus on innovative solutions and sustainable designs.</p>
-    </section>
+        <section id="about" class="section about">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>Hello there! I'm a passionate fourth-year Electrical and Computer Engineering (ECE) student with a strong fascination for the world of technology and innovation. My journey in the realm of ECE has been an exciting one, encompassing a diverse range of subjects such as signals, circuits, solid-state devices, VHDL digital design, digital logic, electromagnetics, applied magnetics, and remote sensing. Alongside my academic pursuits, I've been actively engaged in the thrilling domain of machine learning, contributing to projects at the Machine Learning Lab within my university. My dedication to unraveling the intricacies of algorithms and their applications is driven by a genuine curiosity for the potential they hold in shaping the future. Eager to make my mark in this ever-evolving field, I'm thrilled to share my experiences and insights with you.  </p>
+            </div>
+        </section>
 
-    <section id="resume" class="portfolio-section">
-      <h2 class="section-header">Resume</h2>
-      <p>My resume will showcase my educational background, skills, and experiences.</p>
-    </section>
+        <section id="portfolio" class="section portfolio">
+            <div class="content">
+                <h2>Portfolio</h2>
+                <p>Check out some of my latest projects below.</p>
+            </div>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Description of the project goes here.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Description of the project goes here.</p>
+                </div>
+                <!-- Add more portfolio items here -->
+            </div>
+        </section>
 
-    <section id="projects" class="portfolio-section">
-      <h2 class="section-header">Projects</h2>
-      <p>Check out some of my exciting projects that demonstrate my skills and creativity.</p>
-    </section>
+        <section id="resume" class="section resume">
+            <div class="content">
+                <h2>Resume</h2>
+                <p>View my professional background and qualifications.</p>
+            </div>
+        </section>
 
-    <section id="experience" class="portfolio-section">
-      <h2 class="section-header">Experience</h2>
-      <p>My professional experiences have shaped me into a well-rounded engineer.</p>
-    </section>
+        <section id="experience" class="section experience">
+            <div class="content">
+                <h2>Experience</h2>
+                <p>Explore my past work experiences and achievements.</p>
+            </div>
+        </section>
 
-    <section id="certifications" class="portfolio-section">
-      <h2 class="section-header">Certifications</h2>
-      <p>Explore the certifications that showcase my dedication to learning and growth.</p>
-    </section>
+        <section id="contact" class="section contact">
+            <div class="content">
+                <h2>Contact Me</h2>
+                <p>Feel free to get in touch with me. I'd love to hear from you!</p>
+            </div>
+            <div class="contact-form">
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    <section id="contact" class="portfolio-section">
-      <h2 class="section-header">Contact Me</h2>
-      <div class="contact-form-container">
-        <p>If you have any inquiries or opportunities, feel free to get in touch:</p>
-        <form id="contact-form" action="#" method="post">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
 
-  <footer>
-    <p>&copy; 2023 Electrical Engineer Portfolio. All rights reserved.</p>
-  </footer>
+    <button class="back-to-top">↑</button>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
