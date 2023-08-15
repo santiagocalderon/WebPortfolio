@@ -7,35 +7,65 @@
   <title>Your Portfolio</title>
 </head>
 <body>
-  <header class="animated-header">
+  <header>
     <nav>
       <div class="logo">Your Name</div>
-      <div class="menu-toggle" id="menu-toggle">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
       <ul id="main-navigation">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="bubbles-container">
-      <!-- Add background animation (bubbles) here -->
-    </div>
   </header>
   
   <main class="main-container">
-    <section id="home" class="home-section">
-      <div class="home-content">
-        <h1>Your Name</h1>
-        <p>Passionate Electrical Engineering Student</p>
+    <section id="about" class="portfolio-section scroll-effect">
+      <h2 class="section-header">About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </section>
+    
+    <section id="resume" class="portfolio-section scroll-effect">
+      <h2 class="section-header">Resume</h2>
+      <p>Download my resume: <a href="#" download>Download Resume</a></p>
+    </section>
+    
+    <section id="projects" class="portfolio-section scroll-effect">
+      <h2 class="section-header">Projects</h2>
+      <div class="project-item">
+        <h3>Project 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="project-item">
+        <h3>Project 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </section>
     
-    <!-- Add the Portfolio and Contact sections here -->
+    <section id="experience" class="portfolio-section scroll-effect">
+      <h2 class="section-header">Experience</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </section>
     
+    <section id="certifications" class="portfolio-section scroll-effect">
+      <h2 class="section-header">Certifications</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </section>
+    
+    <section id="contact" class="portfolio-section scroll-effect">
+      <h2 class="section-header">Contact</h2>
+      <div class="contact-form-container">
+        <p>If you have any inquiries or opportunities, feel free to get in touch:</p>
+        <form id="contact-form" action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
   </main>
   
   <footer>
